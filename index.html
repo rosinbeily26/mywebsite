@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, World!</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <style>
+
+        body {
+            background-color: #4a90e2;
+            color: #f9f9f9c7;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        b{
+            font-weight:500;
+            color:white;
+        }
+
+        .wrapper {
+            background-color: #000000cc;
+            display: grid;
+            width: 100%;
+            grid-template-areas:
+                "one    two "
+                "one  two"
+                ".  two";
+            gap: 10px;
+            padding: 0px 40px;
+            grid-template-rows: 1fr auto;
+            grid-template-columns: 2fr 2fr;
+            color: #f9f9f9c7;
+        }
+        .one {
+            grid-area: one;
+        }
+        .two {
+            grid-area: two;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: small;
+        }
+        .item-one {
+            position: sticky;
+            top: 0;
+            padding: 45px 75px;
+        }
+        .item-two {
+            padding: 55px 10px;
+
+        }
+        .header-font {
+            font-family: 'Lora', serif; 
+            font-size: 2.5em; 
+            color: white; 
+            text-align: center;
+           
+            letter-spacing: 1px; 
+            text-transform: uppercase; 
+            
+        }
+        .header-subtitle-one {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            color: whitesmoke;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .header-subtitle-two {
+            text-align: center;
+            font-size: xx-small;
+            letter-spacing: 1px;
+            color: #acd1e7;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        body {
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+
+        .header-subtitle-three ul li {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: smaller;
+            color: #acd1e7;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            list-style-type: none;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+            .header-subtitle-three ul li:hover {
+                color: white;
+                font-weight: 400;
+            }
+
+        .header-subtitle-three ul li:hover .nav-indicator {
+                    width: 4rem; 
+                    background-color: #E5E7EB;
+        }
+
+        .nav-indicator {
+            display: inline-block;
+            margin-right: 2px;
+            height: 2px;
+            width: 2rem;
+            background-color: #acd1e7;
+            transition: all 0.4s ease;
+        }
+
+        .icon {
+            color: #f9f9f9c7;
+            margin: 0px 10px;
+            transition: color 0.5s ease, border-color 0.5s ease;
+            font-size: larger;
+            border: 2px solid transparent; /* Transparent border initially */
+            border-radius: 50%; /* Circular border */
+            padding: 5px; /* Space around the icon */
+        }
+
+            .icon:hover {
+                color: white;
+                border-color: #f9f9f9c7; /* Border color on hover */
+                fill:black;
+            }
+        .highlight {
+            font-weight: normal;
+            color: white;
+        }
+
+
+      
+       
+        
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <div class="one">
+            <div class="item-one">
+                <p class="header-font">
+                     Rosin Beily
+                </p>
+                <p class="header-subtitle-one">
+                    Junior Software Developer
+                </p>
+                <p class="header-subtitle-two">
+                    .Net | Anguler | JS | TypeScript | HTML | CSS | BootStrap | C# | LinQ | SQL | MVC | WEB Api | GIT | Azure | Nutanix
+                </p>
+                <p style="padding:10px;">
+
+                </p>
+                <div class="header-subtitle-three">
+                    <ul class="list-style" >
+                        <li >
+                            <span class="nav-indicator"></span>
+                            <span>About</span>
+                        </li>
+                        <li>
+                            <span class="nav-indicator"></span>
+                            <span>Projects</span>
+                        </li>
+                        <li>
+                            <span class="nav-indicator"></span>
+                            <span>Contact</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container " >
+                    <nav class="navbar ">
+                        <ul class="navbar-nav d-flex flex-row ">
+                            <li class="nav-item  ">
+                                <a href="https://github.com/rosinbeily26?tab=repositories">
+                                    <span>
+                                        <i class="bi bi-github icon"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="www.linkedin.com/in/rosinbeily">
+                                    <span>
+                                        <i class="bi bi-linkedin icon"></i>
+                                    </span>
+
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="https://www.instagram.com/rosinbeily/">
+                                    <span>
+                                        <i class="bi bi-instagram icon"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="#">
+                                    <i class="bi bi-envelope-at icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+           
+        </div>
+        <div class="two">
+            <div class="item-two">
+                <p>
+                    I kicked off my software development journey in 2022, diving headfirst into web development with a focus on front-end frameworks like Angular.
+                    I got my hands dirty on a bunch of healthcare projects, <span class="highlight">building responsive UI pages from scratch</span> (because who doesn’t love a good challenge?).
+                </p>
+                <p>
+                    As I bounced from one project to another, I eventually found myself dabbling in back-end development.
+                    Enter .NET. That’s where I picked up some useful superpowers—<span class="highlight">C#, LINQ, SQL, and Git.</span> Now I’m practically unstoppable (in my own mind, at least).
+</p>
+
+                <p>
+                    Currently, I’m deep into integrating <span class="highlight">
+                    Azure VM services into .NET applications</span>. So, yeah, now I’ve got some cloud and DevOps knowledge under my belt too.
+                    If you’re into that kind of thing, let’s talk shop!
+</p>
+                <p>
+                    These days, my mission is to learn as much tech as humanly possible. I try to keep it exciting—because, let’s face it, tech learning can get a little boring,
+                    but I’m doing my best to keep it fun. No snoozing allowed!
+                </p>
+                <p>
+                    When I’m not glued to a screen, I’m probably smashing birdies on the badminton court
+                    (I’ve won more tournaments than I’d care to admit). I try to ditch my phone, get moving, and stay active—sometimes running around town hunting for the best new food spots. And, of course,
+                    I spend my free time planning trips that, let’s be real, are almost definitely getting canceled.
+
+                </p>
+
+                <p>
+                    I kicked off my software development journey in 2022, diving headfirst into web development with a focus on front-end frameworks like Angular.
+                    I got my hands dirty on a bunch of healthcare projects, building responsive UI pages from scratch (because who doesn’t love a good challenge?).
+                </p>
+                <p>
+                    As I bounced from one project to another, I eventually found myself dabbling in back-end development.
+                    Enter .NET. That’s where I picked up some useful superpowers—C#, LINQ, SQL, and Git. Now I’m practically unstoppable (in my own mind, at least).
+                </p>
+
+                <p>
+                    Currently, I’m deep into integrating Azure VM services into .NET applications. So, yeah, now I’ve got some cloud and DevOps knowledge under my belt too.
+                    If you’re into that kind of thing, let’s talk shop!
+                </p>
+                <p>
+                    These days, my mission is to learn as much tech as humanly possible. I try to keep it exciting—because, let’s face it, tech learning can get a little boring,
+                    but I’m doing my best to keep it fun. No snoozing allowed!
+                </p>
+                <p>
+                    When I’m not glued to a screen, I’m probably smashing birdies on the badminton court
+                    (I’ve won more tournaments than I’d care to admit). I try to ditch my phone, get moving, and stay active—sometimes running around town hunting for the best new food spots. And, of course,
+                    I spend my free time planning trips that, let’s be real, are almost definitely getting canceled.
+
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
